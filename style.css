@@ -1,0 +1,134 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs {
+    position: absolute;
+    top: 30%;
+    width: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    list-style: none;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    height: 30px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.tab:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.active.tab {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+[data-tab-content] {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    text-transform: lowercase;
+    font-weight: lighter;
+    font-size: 15px;
+    top: 150%;
+    margin-top: 20px;
+    width: 720px;
+    transition: opacity 0.5s;
+}
+
+.active[data-tab-content] {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    color: black;
+    transition: opacity 0.5s;
+}
+
+[data-tab-icons] {
+    display: none;
+}
+
+.input {
+    display: none;
+}
+
+#fitGuide {
+    right: -13%;
+}
+
+#materials {
+    left: -13%;
+}
+
+.materialsList {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.materialsList>li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33.3%;
+}
+
+.materialPrecent {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.materialType {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-transform: lowercase;
+}
+
+hr {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 40px;
+}

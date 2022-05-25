@@ -1,0 +1,115 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs {
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.tab {
+    border-bottom: 1px solid black;
+}
+
+.label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    content: "+";
+}
+
+.label::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    transition: transform 0.5s;
+}
+
+.label,
+.content {
+    padding: 14px 20px;
+}
+
+.content {
+    height: 0;
+    padding: 0 10px;
+    margin: 0 20px;
+    line-height: 1.6;
+    overflow-y: hidden;
+    text-align: center;
+    transition: height 0.5s linear;
+    transform: translatey(10%);
+}
+
+.input {
+    display: none;
+}
+
+.active>.content {
+    height: 400px;
+    transition: height 0.5s;
+    transform: translatey(10%);
+}
+
+.active>.label::after {
+    content: "-";
+    transition: height 0.5s;
+    transform: translateY(-150%);
+}
+
+.materialsList {
+    position: relative;
+    width: 100%;
+    left: -1%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.materialsList>li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33.3vw;
+}
+
+.materialPrecent {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.materialType {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-transform: lowercase;
+}
+
+hr {
+    width: 10vw;
+    color: black;
+    margin-bottom: 10px;
+}

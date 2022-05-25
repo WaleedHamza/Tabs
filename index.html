@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="mobileStyle.css" media="(max-width: 767px)" rel="stylesheet">
+    <link href="style.css" media="(min-width: 767px)" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='tabs'>
+        <div class="tab active" data-tab-target="#fitGuide">
+            <input type='radio' id='section1' name='t' class="input">
+            <label class="label" for='section1'>Fit Guide</label>
+            <div id="fitGuide" data-tab-content class='content active'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit st laborum.
+                </p>
+            </div>
+        </div>
+
+        <div class="tab" data-tab-target="#care">
+            <input type='radio' id='section2' name='t' class="input">
+            <label class="label" for='section2'>Care</label>
+            <div id="care" data-tab-content class='content'>
+                <p>Sed risus ultricies tristique nulla aliquet enim tortor
+                    at auctor. Nulla posuere sollicitudin aliquam ultrices sagittis.
+                    Lectus quam id leo in vitae turpis. Auctor neque vitae tempus
+                    quam pellentesque nec nam. Nulla facilisi cras fermentum odio.
+                    Eros in cursus turpis massa tincidunt dui ut ornare. Enim sed
+                    faucibus turpis in eu mi. Ullamcorper eget nulla facilisi etiam
+                    dignissim diam quis. At auctor urna nunc id cursus metus aliquam
+                    eleifend mi.
+                </p>
+            </div>
+        </div>
+
+        <div class="tab" data-tab-target="#materials">
+            <input type='radio' id='section3' name='t' class="input">
+            <label class="label" for='section3'>Materials</label>
+            <div id="materials" data-tab-content class='content'>
+                <ul class="materialsList">
+                    <li>
+                        <h1 class="materialPrecent">50%</h1>
+                        <p class="materialType">cashmere</p>
+                    </li>
+                    <br>
+                    <li>
+                        <h1 class="materialPrecent">46%</h1>
+                        <p class="materialType">wool</p>
+                    </li>
+                    <br>
+                    <li>
+                        <h1 class="materialPrecent">4%</h1>
+                        <p class="materialType">modal</p>
+                    </li>
+                </ul>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
